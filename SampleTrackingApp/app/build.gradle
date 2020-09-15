@@ -1,0 +1,107 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+
+repositories {
+    maven { url 'https://locus.bintray.com/locus-lotr-sdk' }
+}
+
+android {
+    compileSdkVersion 29
+    defaultConfig {
+        applicationId "com.loucs.sdk.sampletrackingapp"
+        minSdkVersion 21
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    signingConfigs {
+        release {
+            storeFile new File(keystore_placeholder)
+            storePassword RELEASE_STORE_PASSWORD
+            keyAlias RELEASE_KEY_ALIAS
+            keyPassword RELEASE_KEY_PASSWORD
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+        }
+
+        debug {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            multiDexEnabled true
+        }
+    }
+
+    buildTypes.each {
+        it.buildConfigField 'Boolean', 'USE_CLIENT_LOGIN', 'false'
+    }
+
+    packagingOptions {
+        exclude 'META-INF/jersey-module-version'
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+}
+
+dependencies {
+
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.1'
+
+    implementation 'org.slf4j:slf4j-api:1.7.25'
+    implementation 'com.github.tony19:logback-android:2.0.0'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'com.google.android.material:material:1.2.1'
+
+    implementation 'androidx.multidex:multidex:2.0.1'
+
+    //implementation 'sh.locus:lotr.sdk:1.0.11'
+
+    // Dependencies when using local tracking SDK build
+    implementation project(':tracking-sdk')
+    implementation 'com.google.android.gms:play-services-location:17.0.0'
+    implementation 'com.fasterxml.jackson.core:jackson-databind:2.9.9.3'
+
+    // Retrofit
+    def retrofitVersion = '2.8.1'
+    def okhttpVersion = '4.5.0'
+    implementation "com.squareup.okhttp3:okhttp:$okhttpVersion"
+    implementation "com.squareup.retrofit2:retrofit:$retrofitVersion"
+    implementation "com.squareup.retrofit2:converter-jackson:$retrofitVersion"
+    implementation "com.squareup.retrofit2:adapter-rxjava2:$retrofitVersion"
+
+    //RxJava
+    implementation 'io.reactivex.rxjava2:rxandroid:2.1.1'
+    implementation 'io.reactivex.rxjava2:rxjava:2.2.19'
+
+    // Dependency Injection
+    def daggerVersion = '2.25.4'
+    implementation "com.google.dagger:dagger:$daggerVersion"
+
+    implementation 'sh.locus.lotr:lotr-javasdk:0.0.1-20200824.122945-261'
+
+    implementation 'com.skyhook.location:location-sdk-android:5.2.0-rc1'
+
+    implementation "androidx.work:work-runtime-ktx:2.4.0"
+
+    def room_version = "2.2.5"
+    implementation "androidx.room:room-runtime:$room_version"
+    implementation "androidx.room:room-rxjava2:$room_version"
+    // End of dependencies when using local tracking SDK build
+}

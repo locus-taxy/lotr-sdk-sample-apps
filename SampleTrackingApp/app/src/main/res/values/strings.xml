@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Sample Tracking App</string>
+
+    <string name="last_known_location">Last known location:\n%1$s</string>
+    <string name="error_time">At %1$s</string>
+    <string name="button_login">Login</string>
+    <string name="hint_password">Password</string>
+    <string name="hint_user_id">User ID</string>
+    <string name="hint_client_id">Client ID</string>
+    <string name="error_blank_in_login">Fill in credentials</string>
+    <string name="error_logout_fail">Try again after some time</string>
+
+    <string name="notification_text">Location Tracking On</string>
+</resources>
