@@ -86,9 +86,9 @@ class LoginFragment : Fragment() {
 
         // App can use either user's or client's login based on BuildConfig
         if (BuildConfig.USE_CLIENT_LOGIN) {
-            LocusLotrSdk.init(context, sdkReadyCallback, ClientAuthParams(clientId, userId, password), true)
+            LocusLotrSdk.init(context, ClientAuthParams(clientId, userId, password), true, sdkReadyCallback)
         } else {
-            LocusLotrSdk.init(context, sdkReadyCallback, UserAuthParams(clientId, userId, password), true)
+            LocusLotrSdk.init(context, UserAuthParams(clientId, userId, password), true, sdkReadyCallback)
         }
     }
 
