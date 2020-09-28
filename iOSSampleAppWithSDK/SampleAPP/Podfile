@@ -1,0 +1,11 @@
+# Uncomment the next line to define a global platform for your project
+platform :ios, '12.0'
+
+target 'SampleAPP' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+  
+#  # Pods for SampleAPP
+  pod 'LocusLotrSdk', :git => 'git@github.com:locus-taxy/lotr-sdk-ios.git', :branch => 'frameWorkUpdate'
+
+end
