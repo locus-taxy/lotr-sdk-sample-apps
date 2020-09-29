@@ -32,24 +32,24 @@ class ViewController: UIViewController {
         alert.addTextField { textField in
             textField.tag = 1
             textField.placeholder = "Client ID"
-            textField.text = "test"
+            textField.text = ""
         }
         alert.addTextField { textField in
             textField.tag = 2
             textField.placeholder = "User ID"
-            textField.text = "karthikmn"
+            textField.text = ""
         }
         alert.addTextField { textField in
             textField.tag = 3
             textField.isSecureTextEntry = true
             textField.placeholder = "Password"
-            textField.text = "Testing2"
+            textField.text = ""
         }
         alert.addAction(UIAlertAction(title: "Okay", style: .default, handler: { _ in
 
-            let client = alert.textFields?.first { $0.tag == 1 }?.text ?? "test"
-            let userId = alert.textFields?.first { $0.tag == 2 }?.text ?? "karthikmn"
-            let password = alert.textFields?.first { $0.tag == 3 }?.text ?? "Testing1"
+            let client = alert.textFields?.first { $0.tag == 1 }?.text ?? ""
+            let userId = alert.textFields?.first { $0.tag == 2 }?.text ?? ""
+            let password = alert.textFields?.first { $0.tag == 3 }?.text ?? ""
             let param = AuthParams.forUser(clientId: client, userId: userId, password: password)
             LocusSDK.initialize(params: param, delegate: self, successBlock: {
                 self.consolePrint("initializeSuccess")
@@ -220,7 +220,7 @@ extension ViewController: UIImagePickerControllerDelegate, UINavigationControlle
             if success {
                 currentFilename = filename
                 do {
-                    try LocusSDK.uploadFile(task: Task.from(clientId: "test", taskId: "2020-08-19-karthikmn_11"), fileName: currentFilename!, data: imageData)
+                    try LocusSDK.uploadFile(task: Task.from(clientId: "", taskId: ""), fileName: currentFilename!, data: imageData)
                 } catch {
                     self.consolePrint("Error - \(LocusSDKError.error(error).message)")
                 }
