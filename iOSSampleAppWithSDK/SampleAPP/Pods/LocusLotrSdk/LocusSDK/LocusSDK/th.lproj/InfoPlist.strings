@@ -1,5 +1,0 @@
-"NSCameraUsageDescription" = "ใช้เพื่อถ่ายภาพโปรไฟล์ / POD";
-"NSPhotoLibraryUsageDescription" = "ใช้เพื่อถ่ายภาพโปรไฟล์ / POD";
-"NSLocationAlwaysUsageDescription" = "\“มักจะอนุญาตให้\” การเข้าถึงตำแหน่งเพื่อติดตามกิจกรรมบนพื้นดิน";
-"NSLocationWhenInUseUsageDescription" = "\“มักจะอนุญาตให้\” การเข้าถึงตำแหน่งเพื่อติดตามกิจกรรมบนพื้นดิน";
-
