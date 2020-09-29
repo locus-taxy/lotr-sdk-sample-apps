@@ -1,0 +1,65 @@
+/* Localizable.strings
+LocusSDK
+ 
+Created by Karthik M N on 26/06/19.
+Copyright © 2019 Karthik M N. All rights reserved. */
+
+"common.done" = "Selesai";
+"common.continue" = "Teruskan";
+"common.dimiss" = "Singkir";
+"common.cancel" = "Batalkan";
+"common.submit" = "Hantar";
+"common.error" = "Masalah";
+"common.okay" = "Ok";
+
+/* Scanner View */
+"scanner.view.title" = "Pengimbas";
+
+/* checklist View */
+"checklist.view.title" = "Senarai Semak";
+"checklist.view.subtitle" = "Masukkan butiran untuk dilengkapkan";
+
+/* URL checklist */
+"checklist.view.url" = "URL";
+"checklist.view.url.visited" = "Dilawati";
+"checklist.view.url.notVisited" = "Tidak Dilawati";
+
+/* Signature checklist */
+"checklist.view.signature.help" = "Tandatangan nama dengan jari anda";
+"checklist.view.signature.error.title" = "Tandatangan tiada";
+"checklist.view.signature.error.message" = "Sila Tandatangan";
+
+/* Photo checklist */
+"checklist.view.photo.retake" = "Ambil semula";
+
+/* checklist error */
+"checklist.error.url" = "%@ mesti dilawati";
+"checklist.error.textfield" = "%@ tidak boleh kosong";
+"checklist.error.singleChoice" = "Satu pilihan daripada %@ mesti dipilih";
+"checklist.error.photo" = "%@ mesti diambil";
+"checklist.error.pinAbsent" = "Pin %@ mesti dimasukkan";
+"checklist.error.pinInvalid" = "Pin %@ Tidak Sah!";
+"checklist.error.ratingAbsent" = "Penilaian %@ tidak boleh sifar";
+"checklist.error.ratingZero" = "Penilaian %@ tidak boleh sifar";
+"checklist.error.boolean" = "%@ tidak dipilih";
+
+/* general error */
+"error.scan.notSupported" = "Imbasan tiak disokong pada versi OS ini";
+"error.image.save" = "Gagal menyimpan imej. Sila cuba lagi";
+
+//Addition Strings for transalation
+"common.add" = "Tambah";
+"common.required" = "diperlukan";
+"common.typeHere" = "Taip sini ...";
+
+//Date Time Checklist
+"checklist.view.datetime.date" = "Tarikh";
+"checklist.view.datetime.time" = "Masa";
+"checklist.view.datetime.selectDate" = "Pilih tarikh";
+"checklist.view.datetime.selectTime" = "Pilih masa";
+
+//CAMERA
+"permissions.camera.alert.dismiss" = "Singkir";
+"permissions.camera.alert.settings" = "Tetapan";
+"permissions.camera.alert.title" = "Tidak dapat mengakses Kamera";
+"permissions.camera.alert.message" = "Untuk mengaktifkan akses, pergi ke Tetapan> Kamera dan aktifkan akses Kamera untuk aplikasi.";

@@ -1,0 +1,67 @@
+/*
+ Localizable.strings
+ LocusSDK
+ 
+ Created by Karthik M N on 26/06/19.
+ Copyright © 2019 Karthik M N. All rights reserved.
+ */
+
+"common.done" = "Gotovo";
+"common.continue" = "Nastavi";
+"common.dimiss" = "Odbaci";
+"common.cancel" = "Otkaži";
+"common.submit" = "Pošalji";
+"common.error" = "Greška";
+"common.okay" = "U redu";
+
+/* Scanner View */
+"scanner.view.title" = "Skener";
+
+/* checklist View */
+"checklist.view.title" = "Kontrolna lista";
+"checklist.view.subtitle" = "Unesite detalje za dovršetak";
+
+/* URL checklist */
+"checklist.view.url" = "URL";
+"checklist.view.url.visited" = "Posjećeno";
+"checklist.view.url.notVisited" = "Neposjećeno";
+
+/* Signature checklist */
+"checklist.view.signature.help" = "Prstom upišite svoje ime";
+"checklist.view.signature.error.title" = "Nema potpisa";
+"checklist.view.signature.error.message" = "Molimo, potpišite";
+
+/* Photo checklist */
+"checklist.view.photo.retake" = "Ponovi";
+
+/* checklist error */
+"checklist.error.url" = "%@ mora biti posjećeno";
+"checklist.error.textfield" = "%@ ne smije biti prazno";
+"checklist.error.singleChoice" = "Opcija %@ mora biti odabrana";
+"checklist.error.photo" = "%@ mora biti odabran";
+"checklist.error.pinAbsent" = "%@ PIN mora biti unesen";
+"checklist.error.pinInvalid" = "%@ Nevažeći PIN!";
+"checklist.error.ratingAbsent" = "%@ ocjena ne može biti nula";
+"checklist.error.ratingZero" = "%@ ocjena ne može biti nula";
+"checklist.error.boolean" = "%@ nije odabrano";
+
+/* general error */
+"error.scan.notSupported" = "Ova verzija OS-a ne podržava skeniranje";
+"error.image.save" = "Slika nije pohranjena. Molimo, pokušajte ponovno";
+
+/* Addition Strings for transalation */
+"common.add" = "Dodaj";
+"common.required" = "obavezno";
+"common.typeHere" = "Utipkajte ovdje...";
+
+//Date Time Checklist
+"checklist.view.datetime.date" = "Datum";
+"checklist.view.datetime.time" = "Vrijeme";
+"checklist.view.datetime.selectDate" = "Odaberite datum";
+"checklist.view.datetime.selectTime" = "Odaberite vrijeme";
+
+//CAMERA
+"permissions.camera.alert.dismiss" = "Odbaci";
+"permissions.camera.alert.settings" = "Postavke";
+"permissions.camera.alert.title" = "Nije moguće pristupiti kameri";
+"permissions.camera.alert.message" = "Da biste omogućili pristup, idite na Postavke> Kamera i uključite pristup kameri za aplikaciju.";

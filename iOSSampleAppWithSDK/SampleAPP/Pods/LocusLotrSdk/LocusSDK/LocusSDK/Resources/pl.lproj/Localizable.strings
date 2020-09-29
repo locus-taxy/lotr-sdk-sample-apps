@@ -1,0 +1,67 @@
+/*
+ Localizable.strings
+ LocusSDK
+ 
+ Created by Karthik M N on 26/06/19.
+ Copyright © 2019 Karthik M N. All rights reserved.
+ */
+
+"common.done" = "Wykonane";
+"common.continue" = "Kontynuuj";
+"common.dimiss" = "Zrezygnuj";
+"common.cancel" = "Anuluj";
+"common.submit" = "Prześlij";
+"common.error" = "Błąd";
+"common.okay" = "Okej";
+
+/* Scanner View */
+"scanner.view.title" = "Skaner";
+
+/* checklist View */
+"checklist.view.title" = "Lista kontrolna";
+"checklist.view.subtitle" = "Aby zakończyć operację, wprowadź informacje szczegółowe";
+
+/* URL checklist */
+"checklist.view.url" = "URL";
+"checklist.view.url.visited" = "Odwiedzone";
+"checklist.view.url.notVisited" = "Nieodwiedzone";
+
+/* Signature checklist */
+"checklist.view.signature.help" = "Podaj imię za pomocą palca";
+"checklist.view.signature.error.title" = "Brak podpisu";
+"checklist.view.signature.error.message" = "Podpisz się";
+
+/* Photo checklist */
+"checklist.view.photo.retake" = "Powtórz";
+
+/* checklist error */
+"checklist.error.url" = "Należy odwiedzić %@";
+"checklist.error.textfield" = "%@ nie może być puste";
+"checklist.error.singleChoice" = "Należy wybrać opcję %@";
+"checklist.error.photo" = "Należy przyjąć %@";
+"checklist.error.pinAbsent" = "Należy wprowadzić Pin %@";
+"checklist.error.pinInvalid" = "Nieprawidłowy nr Pin %@!";
+"checklist.error.ratingAbsent" = "Ocena %@ nie może być równa zero";
+"checklist.error.ratingZero" = "Ocena %@ nie może być równa zero";
+"checklist.error.boolean" = "Nie wybrano %@";
+
+/* general error */
+"error.scan.notSupported" = "Skanowany dokument nie jest obsługiwany w tej wersji systemu operacyjnego";
+"error.image.save" = "Błąd podczas zapisywania obrazu. Proszę spróbować ponownie";
+
+/* Addition Strings for transalation */
+"common.add" = "Dodaj";
+"common.required" = "wymagane";
+"common.typeHere" = "Wpisz tutaj...";
+
+//Date Time Checklist
+"checklist.view.datetime.date" = "Data";
+"checklist.view.datetime.time" = "Czas";
+"checklist.view.datetime.selectDate" = "Wybierz datę";
+"checklist.view.datetime.selectTime" = "Wybierz czas";
+
+//CAMERA
+"permissions.camera.alert.dismiss" = "Zrezygnuj";
+"permissions.camera.alert.settings" = "Ustawienia";
+"permissions.camera.alert.title" = "Nie można uzyskać dostępu do aparatu";
+"permissions.camera.alert.message" = "Aby umożliwić dostęp, przejdź do Ustawienia> Aparat i włącz Dostęp do aparatu dla aplikacji.";

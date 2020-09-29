@@ -1,0 +1,4 @@
+"NSCameraUsageDescription" = "Digunakan untuk mengambil gambar Profil / POD";
+"NSPhotoLibraryUsageDescription" = "Digunakan untuk mengambil gambar Profil / POD";
+"NSLocationAlwaysUsageDescription" = "\“Sentiasa Benarkan\” akses lokasi untuk menjejaki aktiviti di dalam tanah.";
+"NSLocationWhenInUseUsageDescription" = "\“Sentiasa Benarkan\” akses lokasi untuk menjejaki aktiviti di dalam tanah.";

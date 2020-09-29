@@ -1,0 +1,67 @@
+/*
+ Localizable.strings
+ LocusSDK
+ 
+ Created by Karthik M N on 26/06/19.
+ Copyright © 2019 Karthik M N. All rights reserved.
+ */
+
+"common.done" = "Fertig";
+"common.continue" = "Fortfahren";
+"common.dimiss" = "Verwerfen";
+"common.cancel" = "Abbrechen";
+"common.submit" = "Absenden";
+"common.error" = "Fehler";
+"common.okay" = "Okay";
+
+/* Scanner View */
+"scanner.view.title" = "Scanner";
+
+/* checklist View */
+"checklist.view.title" = "Checkliste";
+"checklist.view.subtitle" = "Zum Vervollständigen Einzelheiten eingeben";
+
+/* URL checklist */
+"checklist.view.url" = "URL";
+"checklist.view.url.visited" = "Besucht";
+"checklist.view.url.notVisited" = "Nicht besucht";
+
+/* Signature checklist */
+"checklist.view.signature.help" = "Unterschreiben Sie mit Hilfe Ihres Fingers";
+"checklist.view.signature.error.title" = "Keine Unterschrift vorhanden";
+"checklist.view.signature.error.message" = "Bitte unterschreiben";
+
+/* Photo checklist */
+"checklist.view.photo.retake" = "Wiederholung";
+
+/* checklist error */
+"checklist.error.url" = "%@ müssen besucht werden";
+"checklist.error.textfield" = "%@ dürfen nicht leer sein";
+"checklist.error.singleChoice" = "Eine Option mit %@ muss ausgewählt werden";
+"checklist.error.photo" = "%@ müssen genommen werden";
+"checklist.error.pinAbsent" = "%@ Pin muss eingegeben werden";
+"checklist.error.pinInvalid" = "%@ Pin ungültig!";
+"checklist.error.ratingAbsent" = "%@ Bewertung darf nicht Null sein";
+"checklist.error.ratingZero" = "%@ Bewertung darf nicht Null sein";
+"checklist.error.boolean" = "%@ nicht ausgewählt";
+
+/* general error */
+"error.scan.notSupported" = "Scannen wird bei dieser Version des Betriebssystems nicht unterstützt";
+"error.image.save" = "Konnte das Bild nicht speichern. Bitte nochmal versuchen";
+
+/* Addition Strings for transalation */
+"common.add" = "Hinzufügen";
+"common.required" = "Erforderlich";
+"common.typeHere" = "Hier tippen...";
+
+//Date Time Checklist
+"checklist.view.datetime.date" = "Datum";
+"checklist.view.datetime.time" = "Zeit";
+"checklist.view.datetime.selectDate" = "Datum auswählen";
+"checklist.view.datetime.selectTime" = "Zeit auswählen";
+
+//CAMERA
+"permissions.camera.alert.dismiss" = "Verwerfen";
+"permissions.camera.alert.settings" = "Einstellungen";
+"permissions.camera.alert.title" = "Zugriff auf die Kamera nicht möglich";
+"permissions.camera.alert.message" = "Um den Zugriff zu aktivieren, gehen Sie zu Einstellungen> Kamera und aktivieren Sie den Kamerazugriff für die App.";

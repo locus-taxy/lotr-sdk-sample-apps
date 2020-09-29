@@ -1,0 +1,6 @@
+framework module LocusLotrSdk {
+  umbrella header "LocusLotrSdk-umbrella.h"
+
+  export *
+  module * { export * }
+}

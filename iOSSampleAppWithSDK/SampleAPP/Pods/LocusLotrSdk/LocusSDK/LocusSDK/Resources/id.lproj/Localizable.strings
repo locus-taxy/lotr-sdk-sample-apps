@@ -1,0 +1,65 @@
+/* Localizable.strings
+LocusSDK
+ 
+Created by Karthik M N on 26/06/19.
+Copyright © 2019 Karthik M N. All rights reserved. */
+
+"common.done" = "Selesai";
+"common.continue" = "Lanjut";
+"common.dimiss" = "Abaikan";
+"common.cancel" = "Batalkan";
+"common.submit" = "Kirim";
+"common.error" = "Terjadi Kesalahan";
+"common.okay" = "Oke";
+
+/* Scanner View */
+"scanner.view.title" = "Pemindai";
+
+/* checklist View */
+"checklist.view.title" = "Daftar periksa";
+"checklist.view.subtitle" = "Masukkan perincian untuk menyelesaikan";
+
+/* URL checklist */
+"checklist.view.url" = "URL";
+"checklist.view.url.visited" = "Dikunjungi";
+"checklist.view.url.notVisited" = "Belum Dikunjungi";
+
+/* Signature checklist */
+"checklist.view.signature.help" = "Tanda tangani nama Anda menggunakan jari Anda";
+"checklist.view.signature.error.title" = "Tidak ada tanda tangan";
+"checklist.view.signature.error.message" = "Harap Tanda Tangani";
+
+/* Photo checklist */
+"checklist.view.photo.retake" = "Ambil kembali";
+
+/* checklist error */
+"checklist.error.url" = "%@ harus dikunjungi";
+"checklist.error.textfield" = "%@ tidak boleh kosong";
+"checklist.error.singleChoice" = "Sebuah opsi %@ harus dipilih";
+"checklist.error.photo" = "%@ harus diambil";
+"checklist.error.pinAbsent" = "%@ Pin harus dimasukkan";
+"checklist.error.pinInvalid" = "%@ Pin Tidak Berlaku!";
+"checklist.error.ratingAbsent" = "%@ peringkat tidak boleh Nol";
+"checklist.error.ratingZero" = "%@ peringkat tidak boleh Nol";
+"checklist.error.boolean" = "%@ tidak terpilih";
+
+/* general error */
+"error.scan.notSupported" = "Pemindaian tidak didukung pada versi OS ini";
+"error.image.save" = "Gagal menyimpan gambar. Silakan coba lagi";
+
+//Addition Strings for transalation
+"common.add" = "Tambahkan";
+"common.required" = "wajib diisi";
+"common.typeHere" = "Ketik di sini ...";
+
+//Date Time Checklist
+"checklist.view.datetime.date" = "Tanggal";
+"checklist.view.datetime.time" = "Waktu";
+"checklist.view.datetime.selectDate" = "Pilih tanggal";
+"checklist.view.datetime.selectTime" = "Pilih waktu";
+
+//CAMERA
+"permissions.camera.alert.dismiss" = "Abaikan";
+"permissions.camera.alert.settings" = "Pengaturan";
+"permissions.camera.alert.title" = "Tidak dapat mengakses Kamera";
+"permissions.camera.alert.message" = "Untuk mengaktifkan akses, buka Pengaturan> Kamera dan nyalakan Akses kamera untuk aplikasi.";

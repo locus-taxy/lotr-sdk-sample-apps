@@ -1,0 +1,4 @@
+"NSCameraUsageDescription" = "Digunakan untuk mengambil foto Profil / POD";
+"NSPhotoLibraryUsageDescription" = "Digunakan untuk mengambil foto Profil / POD";
+"NSLocationAlwaysUsageDescription" = "\“Selalu mengizinkan\” akses lokasi untuk melacak aktivitas di lapangan.";
+"NSLocationWhenInUseUsageDescription" = "\“Selalu mengizinkan\” akses lokasi untuk melacak aktivitas di lapangan.";

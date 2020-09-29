@@ -1,0 +1,68 @@
+/*
+Localizable.strings
+LocusSDK
+
+Created by Karthik M N on 26/06/19.
+Copyright © 2019 Karthik M N. All rights reserved.
+*/
+
+"common.done" = "Đã hoàn thành";
+"common.continue" = "Tiếp tục";
+"common.dimiss" = "Hủy bỏ";
+"common.cancel" = "Hủy";
+"common.submit" = "Gửi";
+"common.error" = "Lỗi";
+"common.okay" = "Đồng ý";
+
+// Scanner View
+"scanner.view.title" = "Máy quét";
+
+// checklist View
+"checklist.view.title" = "Danh mục";
+"checklist.view.subtitle" = "Nhập chi tiết để hoàn thành";
+
+// URL checklist
+"checklist.view.url" = "URL";
+"checklist.view.url.visited" = "Đã xem";
+"checklist.view.url.notVisited" = "Chưa xem";
+
+// Signature checklist
+"checklist.view.signature.help" = "Dùng ngón tay để ký tên của bạn";
+"checklist.view.signature.error.title" = "Không có chữ ký";
+"checklist.view.signature.error.message" = "Xin hãy ký";
+
+// Photo checklist
+"checklist.view.photo.retake" = "Thực hiện lại";
+
+// checklist error
+"checklist.error.url" = "%@ phải xem";
+"checklist.error.textfield" = "%@ không thể để trống";
+"checklist.error.singleChoice" = "Phải chọn một tùy chọn %@";
+"checklist.error.photo" = "%@ phải được thực hiện";
+"checklist.error.pinAbsent" = "%@ số nhận dạng cá nhân phải được nhập";
+"checklist.error.pinInvalid" = "%@ số nhận dạng cá nhân không hợp lệ!";
+"checklist.error.ratingAbsent" = "%@ đánh giá phải khác 0";
+"checklist.error.ratingZero" = "%@ đánh giá phải khác 0";
+"checklist.error.boolean" = "%@ không được chọn";
+
+// general error
+"error.scan.notSupported" = "Phiên bản OS này không hỗ trợ quét";
+"error.image.save" = "Không lưu được hình ảnh. Vui lòng thử lại";
+
+//Addition Strings for transalation
+"common.add" = "Thêm";
+"common.required" = "Bắt buộc";
+"common.typeHere" = "Nhập ở đây...";
+
+//Date Time Checklist
+"checklist.view.datetime.date" = "ngày";
+"checklist.view.datetime.time" = "thời gian";
+"checklist.view.datetime.selectDate" = "chọn ngày";
+"checklist.view.datetime.selectTime" = "chọn thời gian";
+
+//CAMERA
+"permissions.camera.alert.dismiss" = "Hủy bỏ";
+"permissions.camera.alert.settings" = "Thiết lập";
+"permissions.camera.alert.title" = "Không thể truy cập Máy ảnh";
+"permissions.camera.alert.message" = "Để bật quyền truy cập, hãy đi tới Cài đặt> Máy ảnh và bật quyền truy cập Máy ảnh cho ứng dụng.";
+

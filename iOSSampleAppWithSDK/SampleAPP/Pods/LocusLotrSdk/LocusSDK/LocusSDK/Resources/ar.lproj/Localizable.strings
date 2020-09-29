@@ -1,0 +1,60 @@
+
+"common.done" = "المُنجزة";
+"common.continue" = "استكمال";
+"common.dimiss" = "رفض";
+"common.cancel" = "إلغاء";
+"common.submit" = "تقديم";
+"common.error" = "خطأ";
+"common.okay" = "حسنًا";
+
+/* Scanner View */
+"scanner.view.title" = "الماسح";
+
+/* checklist View */
+"checklist.view.title" = "قائمة الفحص";
+"checklist.view.subtitle" = "ادخل التفاصيل للاستكمال";
+
+/* URL checklist */
+"checklist.view.url" = "عنوان URL";
+"checklist.view.url.visited" = "تمت الزيارة";
+"checklist.view.url.notVisited" = "لم تتم الزيارة";
+
+/* Signature checklist */
+"checklist.view.signature.help" = "قم بتوقيع اسمك باستخدام إصبعك";
+"checklist.view.signature.error.title" = "التوقيع غير موجود";
+"checklist.view.signature.error.message" = "برجاء التوقيع";
+
+/* Photo checklist */
+"checklist.view.photo.retake" = "إعادة أخذ";
+
+/* checklist error */
+"checklist.error.url" = "يجب زيارة %@";
+"checklist.error.textfield" = "لا يمكن ترك %@ فارغًا";
+"checklist.error.singleChoice" = "يجب تحديد خيار %@";
+"checklist.error.photo" = "يجب أخذ %@";
+"checklist.error.pinAbsent" = "يجب إدخال رقم التعريف الشخصي";
+"checklist.error.pinInvalid" = "رقم التعريف الشخصي %@ غير صحيح!";
+"checklist.error.ratingAbsent" = "لا يمكن أن يكون تقييم %@ صفرًا";
+"checklist.error.ratingZero" = "لا يمكن أن يكون تقييم %@ صفرًا";
+"checklist.error.boolean" = "%@ غير محدد";
+
+/* general error */
+"error.scan.notSupported" = "المسح غير مدعم على إصدار نظام التشغيل الحالي";
+"error.image.save" = "فشل في حفظ الصورة. برجاء المحاولة مرة أخرى";
+
+/* Addition Strings for transalation SDK */
+"common.add" = "إضافة";
+"common.required" = "إلزامي";
+"common.typeHere" = "اكتب هنا...";
+
+//Date Time Checklist
+"checklist.view.datetime.date" = "تاريخ";
+"checklist.view.datetime.time" = "زمن";
+"checklist.view.datetime.selectDate" = "حدد تاريخ";
+"checklist.view.datetime.selectTime" = "حدد الوقت";
+
+//CAMERA
+"permissions.camera.alert.dismiss" = "رفض";
+"permissions.camera.alert.settings" = "الإعدادات";
+"permissions.camera.alert.title" = "تعذر الوصول إلى الكاميرا";
+"permissions.camera.alert.message" = "لتمكين الوصول ، انتقل إلى الإعدادات> الكاميرا وشغّل الوصول إلى الكاميرا للتطبيق.";

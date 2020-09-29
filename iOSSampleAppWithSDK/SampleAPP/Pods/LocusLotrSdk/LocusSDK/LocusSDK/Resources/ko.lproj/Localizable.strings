@@ -1,0 +1,67 @@
+/*
+ Localizable.strings
+ LocusSDK
+ 
+ Created by Karthik M N on 26/06/19.
+ Copyright © 2019 Karthik M N. All rights reserved.
+ */
+
+"common.done" = "완료";
+"common.continue" = "계속";
+"common.dimiss" = "닫기";
+"common.cancel" = "취소";
+"common.submit" = "제출";
+"common.error" = "오류";
+"common.okay" = "확인";
+
+/* Scanner View */
+"scanner.view.title" = "스캐너";
+
+/* checklist View */
+"checklist.view.title" = "체크리스트";
+"checklist.view.subtitle" = "세부 사항 입력";
+
+/* URL checklist */
+"checklist.view.url" = "URL";
+"checklist.view.url.visited" = "방문함";
+"checklist.view.url.notVisited" = "방문하지 않음";
+
+/* Signature checklist */
+"checklist.view.signature.help" = "손가락으로 서명";
+"checklist.view.signature.error.title" = "서명 없음";
+"checklist.view.signature.error.message" = "서명하십시오.";
+
+/* Photo checklist */
+"checklist.view.photo.retake" = "다시 수락";
+
+/* checklist error */
+"checklist.error.url" = "%@을(를) 반드시 방문해야 합니다.";
+"checklist.error.textfield" = "%@을(를) 비워둘 수 없습니다.";
+"checklist.error.singleChoice" = "%@ 옵션을 반드시 선택해야 합니다.";
+"checklist.error.photo" = "%@을(를) 반드시 수락해야 합니다.";
+"checklist.error.pinAbsent" = "%@ 핀을 반드시 입력해야 합니다.";
+"checklist.error.pinInvalid" = "유효하지 않은 %@ 핀입니다!";
+"checklist.error.ratingAbsent" = "%@ 평가는 0이 될 수 없습니다.";
+"checklist.error.ratingZero" = "%@ 평가는 0이 될 수 없습니다.";
+"checklist.error.boolean" = "%@ 선택되지 않음";
+
+/* general error */
+"error.scan.notSupported" = "스캔은 이 버전의 OS에서 지원되지 않습니다.";
+"error.image.save" = "이미지 저장에 실패했습니다. 다시 시도하십시오.";
+
+/* Addition Strings for transalation */
+"common.add" = "추가";
+"common.required" = "필수";
+"common.typeHere" = "여기에 입력하십시오...";
+
+//Date Time Checklist
+"checklist.view.datetime.date" = "데이트";
+"checklist.view.datetime.time" = "시각";
+"checklist.view.datetime.selectDate" = "날짜 선택";
+"checklist.view.datetime.selectTime" = "시간을 선택하십시오";
+
+//CAMERA
+"permissions.camera.alert.dismiss" = "닫기";
+"permissions.camera.alert.settings" = "설정";
+"permissions.camera.alert.title" = "카메라에 액세스 할 수 없습니다.";
+"permissions.camera.alert.message" = "액세스를 활성화하려면 설정> 카메라로 이동하여 앱에 대한 카메라 액세스를 켭니다.";

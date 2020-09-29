@@ -1,0 +1,67 @@
+/*
+ Localizable.strings
+ LocusSDK
+ 
+ Created by Karthik M N on 26/06/19.
+ Copyright © 2019 Karthik M N. All rights reserved.
+ */
+"common.done" = "पूर्ण";
+"common.continue" = "जारी रहना";
+"common.dimiss" = "खारिज";
+"common.cancel" = "रद्द करना";
+"common.submit" = "जमा करें";
+
+"common.error" = "त्रुटि";
+"common.okay" = "ठीक है";
+
+//Scanner View
+"scanner.view.title" = "स्कैनर";
+
+//checklist View
+"checklist.view.title" = "चेकलिस्ट";
+"checklist.view.subtitle" = "पूरा करने के लिए विवरण दर्ज करें";
+
+//URL checklist
+"checklist.view.url" = "URL";
+"checklist.view.url.visited" = "का दौरा किया";
+"checklist.view.url.notVisited" = "देखा नहीं गया";
+
+//Signature checklist
+"checklist.view.signature.help" = "अपनी उंगली का उपयोग करके अपने नाम पर हस्ताक्षर करें";
+"checklist.view.signature.error.title" = "हस्ताक्षर मौजूद नहीं है";
+"checklist.view.signature.error.message" = "कृपया हस्ताक्षर करें";
+
+//Photo checklist
+"checklist.view.photo.retake" = "फिर से लेना";
+
+//checklist error
+"checklist.error.url" = "%@ का दौरा किया जाना चाहिए";
+"checklist.error.textfield" = "%@ खाली नहीं किया जा सकता";
+"checklist.error.singleChoice" = "%@ का विकल्प चुना जाना चाहिए";
+"checklist.error.photo" = "%@ लिया जाना चाहिए";
+"checklist.error.pinAbsent" = "%@ पिन दर्ज करना होगा";
+"checklist.error.pinInvalid" = "%@ पिन अमान्य है!";
+"checklist.error.ratingAbsent" = "%@ रेटिंग शून्य नहीं हो सकती";
+"checklist.error.ratingZero" = "%@ रेटिंग शून्य नहीं हो सकती";
+"checklist.error.boolean" = "%@ नहीं चुने गए";
+
+//general error
+"error.scan.notSupported" = "OS के इस संस्करण पर स्कैन समर्थित नहीं है";
+"error.image.save" = "छवि सहेजने में विफल। कृपया पुन: प्रयास करें";
+
+/* Addition Strings for transalation SDK */
+"common.add" = "जोड़ें";
+"common.required" = "आवश्यक है";
+"common.typeHere" = "यहां टाइप करें...";
+
+//Date Time Checklist
+"checklist.view.datetime.date" = "तारीख";
+"checklist.view.datetime.time" = "समय";
+"checklist.view.datetime.selectDate" = "तारीख़ चुनें";
+"checklist.view.datetime.selectTime" = "समय चुनें";
+
+//CAMERA
+"permissions.camera.alert.dismiss" = "रद्द करें";
+"permissions.camera.alert.settings" = "सेटिंग्स";
+"permissions.camera.alert.title" = "कैमरा एक्सेस करने में असमर्थ";
+"permissions.camera.alert.message" = "एक्सेस को सक्षम करने के लिए, सेटिंग्स> कैमरा पर जाएं और ऐप के लिए कैमरा एक्सेस चालू करें।";

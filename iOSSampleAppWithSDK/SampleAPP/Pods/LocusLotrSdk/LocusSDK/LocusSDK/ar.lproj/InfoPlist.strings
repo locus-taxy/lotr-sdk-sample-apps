@@ -1,0 +1,4 @@
+"NSCameraUsageDescription" = "تستخدم لالتقاط الصور الشخصية / POD";
+"NSPhotoLibraryUsageDescription" = "تستخدم لالتقاط الصور الشخصية / POD";
+"NSLocationAlwaysUsageDescription" = "\" السماح دائمًا بالوصول إلى الموقع لتتبع الأنشطة على أرض الواقع. ";
+"NSLocationWhenInUseUsageDescription" = "\" السماح دائمًا بالوصول إلى الموقع لتتبع الأنشطة على أرض الواقع. ";

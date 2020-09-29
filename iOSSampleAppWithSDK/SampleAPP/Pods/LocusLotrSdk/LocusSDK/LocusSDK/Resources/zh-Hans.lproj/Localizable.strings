@@ -1,0 +1,67 @@
+/*
+ Localizable.strings
+ LocusSDK
+ 
+ Created by Karthik M N on 26/06/19.
+ Copyright © 2019 Karthik M N. All rights reserved.
+ */
+
+"common.done" = "完成";
+"common.continue" = "继续";
+"common.dimiss" = "解除";
+"common.cancel" = "取消";
+"common.submit" = "提交";
+"common.error" = "错误";
+"common.okay" = "确定";
+
+/* Scanner View */
+"scanner.view.title" = "扫描器";
+
+/* checklist View */
+"checklist.view.title" = "检查清单";
+"checklist.view.subtitle" = "输入细节以完成";
+
+/* URL checklist */
+"checklist.view.url" = "网址";
+"checklist.view.url.visited" = "已访问";
+"checklist.view.url.notVisited" = "未访问";
+
+/* Signature checklist */
+"checklist.view.signature.help" = "请用手指签名";
+"checklist.view.signature.error.title" = "没有签名";
+"checklist.view.signature.error.message" = "请签名";
+
+/* Photo checklist */
+"checklist.view.photo.retake" = "重新接受";
+
+/* checklist error */
+"checklist.error.url" = "必须访问 %@";
+"checklist.error.textfield" = "%@ 不能为空";
+"checklist.error.singleChoice" = "必须选择一个 %@ 选项";
+"checklist.error.photo" = "必须接受 %@";
+"checklist.error.pinAbsent" = "必须输入 %@ 识别码";
+"checklist.error.pinInvalid" = "%@ 识别码无效！";
+"checklist.error.ratingAbsent" = "%@ 评级不能为零";
+"checklist.error.ratingZero" = "%@ 评级不能为零";
+"checklist.error.boolean" = "%@ 未选择";
+
+/* general error */
+"error.scan.notSupported" = "此版本的操作系统不支持扫描";
+"error.image.save" = "保存图像失败。请重试";
+
+/* Addition Strings for transalation */
+"common.add" = "添加";
+"common.required" = "必填项";
+"common.typeHere" = "在此输入...";
+
+//Date Time Checklist
+"checklist.view.datetime.date" = "日期";
+"checklist.view.datetime.time" = "时间";
+"checklist.view.datetime.selectDate" = "选择日期";
+"checklist.view.datetime.selectTime" = "选择时间";
+
+//CAMERA
+"permissions.camera.alert.dismiss" = "解除";
+"permissions.camera.alert.settings" = "设置";
+"permissions.camera.alert.title" = "无法访问相机";
+"permissions.camera.alert.message" = "要启用访问权限，请转到“设置”>“相机”，然后为该应用程序打开“相机访问权限”。";

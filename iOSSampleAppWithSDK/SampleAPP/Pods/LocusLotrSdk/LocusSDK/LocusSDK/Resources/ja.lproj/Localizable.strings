@@ -1,0 +1,67 @@
+/*
+ Localizable.strings
+ LocusSDK
+ 
+ Created by Karthik M N on 26/06/19.
+ Copyright © 2019 Karthik M N. All rights reserved.
+ */
+
+"common.done" = "完了";
+"common.continue" = "続行";
+"common.dimiss" = "却下";
+"common.cancel" = "キャンセル";
+"common.submit" = "提出";
+"common.error" = "誤差";
+"common.okay" = "OK";
+
+/* Scanner View */
+"scanner.view.title" = "スキャナー";
+
+/* checklist View */
+"checklist.view.title" = "チェックリスト";
+"checklist.view.subtitle" = "完了する詳細を入力してください";
+
+/* URL checklist */
+"checklist.view.url" = "URL";
+"checklist.view.url.visited" = "訪問したことがある";
+"checklist.view.url.notVisited" = "訪問したことがない";
+
+/* Signature checklist */
+"checklist.view.signature.help" = "あなたの指で名前を署名してください。";
+"checklist.view.signature.error.title" = "署名がありません";
+"checklist.view.signature.error.message" = "署名してください";
+
+/* Photo checklist */
+"checklist.view.photo.retake" = "リテイク";
+
+/* checklist error */
+"checklist.error.url" = "%@ を訪問する必要があります";
+"checklist.error.textfield" = "%@ を空にすることはできません";
+"checklist.error.singleChoice" = "％s のオプションを選択する必要があります";
+"checklist.error.photo" = "%@ を取らなければならない";
+"checklist.error.pinAbsent" = "%@ ピンを入力する必要があります";
+"checklist.error.pinInvalid" = "%@ ピンは無効です！";
+"checklist.error.ratingAbsent" = "%@ 評価はゼロにすることはできません。";
+"checklist.error.ratingZero" = "%@ 評価はゼロにすることはできません。";
+"checklist.error.boolean" = "%@ 選択されていません";
+
+/* general error */
+"error.scan.notSupported" = "スキャンはオペレーションシステムのこのバージョンではサポートされていません";
+"error.image.save" = "画像の保存に失敗しました。もう一度お試しください";
+
+/* Addition Strings for transalation */
+"common.add" = "追加";
+"common.required" = "必須";
+"common.typeHere" = "ここに入力...";
+
+//Date Time Checklist
+"checklist.view.datetime.date" = "日付";
+"checklist.view.datetime.time" = "時間";
+"checklist.view.datetime.selectDate" = "日付を選択";
+"checklist.view.datetime.selectTime" = "時間を選択";
+
+//CAMERA
+"permissions.camera.alert.dismiss" = "却下する";
+"permissions.camera.alert.settings" = "設定";
+"permissions.camera.alert.title" = "カメラにアクセスできません";
+"permissions.camera.alert.message" = "アクセスを有効にするには、[設定]> [カメラ]に移動し、アプリのカメラアクセスをオンにします。";
