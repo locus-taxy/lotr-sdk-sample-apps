@@ -51,7 +51,7 @@ PODS:
   - ViewState (1.0.0)
 
 DEPENDENCIES:
-  - "LocusLotrSdk (from `git@github.com:locus-taxy/lotr-sdk-ios.git`, branch `frameWorkUpdate`)"
+  - "LocusLotrSdk (from `git@github.com:locus-taxy/lotr-sdk-ios.git`, branch `ES-ES-24289-libraryUpdateLogCleanUp`)"
 
 SPEC REPOS:
   trunk:
@@ -73,12 +73,12 @@ SPEC REPOS:
 
 EXTERNAL SOURCES:
   LocusLotrSdk:
-    :branch: frameWorkUpdate
+    :branch: ES-ES-24289-libraryUpdateLogCleanUp
     :git: "git@github.com:locus-taxy/lotr-sdk-ios.git"
 
 CHECKOUT OPTIONS:
   LocusLotrSdk:
-    :commit: a458084b656b462386b999f922507322a1ee5aa3
+    :commit: cfa057134278111a3ce0400cd6a4b70a330c33ec
     :git: "git@github.com:locus-taxy/lotr-sdk-ios.git"
 
 SPEC CHECKSUMS:
@@ -99,6 +99,6 @@ SPEC CHECKSUMS:
   RxSwift: 81470a2074fa8780320ea5fe4102807cb7118178
   ViewState: 78aa77483e74e592c22e841619b853bc686843be
 
-PODFILE CHECKSUM: 3de2b40fdd7a41671bbe9f5a5656bb0e4159a17b
+PODFILE CHECKSUM: 5377e3a9e2a22c1327f425b291edf988a40885c8
 
 COCOAPODS: 1.9.3

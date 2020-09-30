@@ -131,24 +131,20 @@ class ViewController: UIViewController {
 
     @IBAction func displayChecklist(_: Any) {
         let checlistitems: [ChecklistItem] = [
-            //            ChecklistItem(key: "cancellation-reason", item: "Select a reason", format: ChecklistItem.Format(rawValue: "SINGLE_CHOICE"), possibleValues: ["Customer not available", "Quality issue", "Cash unavailable", "Late delivery", "Partial order delivered"], allowedValues: [], _optional: false, additionalOptions: [:]),
+            ChecklistItem(key: "cancellation-reason", item: "Select a reason", format: ChecklistItem.Format(rawValue: "SINGLE_CHOICE"), possibleValues: ["Customer not available", "Quality issue", "Cash unavailable", "Late delivery", "Partial order delivered"], allowedValues: [], _optional: false, additionalOptions: [:]),
             ChecklistItem(key: "signature-1", item: "Customer signature", format: ChecklistItem.Format(rawValue: "SIGNATURE"), possibleValues: [], allowedValues: [], _optional: false, additionalOptions: [:]),
-//            ChecklistItem(key: "bool", item: "bill", format: ChecklistItem.Format(rawValue: "BOOLEAN"), possibleValues: [], allowedValues: [], _optional: false, additionalOptions: [:]),
+            ChecklistItem(key: "bool", item: "bill", format: ChecklistItem.Format(rawValue: "BOOLEAN"), possibleValues: [], allowedValues: [], _optional: false, additionalOptions: [:]),
             ChecklistItem(key: "photo", item: "Item", format: ChecklistItem.Format(rawValue: "PHOTO"), possibleValues: [], allowedValues: [], _optional: true, additionalOptions: [:]),
-//            ChecklistItem(key: "url", item: "Terms and condition", format: ChecklistItem.Format(rawValue: "URL"), possibleValues: ["https://locus.sh/privacy-policy/"], allowedValues: [], _optional: false, additionalOptions: [:]),
-//            ChecklistItem(key: "text", item: "comments", format: ChecklistItem.Format(rawValue: "TEXT_FIELD"), possibleValues: [], allowedValues: [], _optional: false, additionalOptions: [:]),
-//            ChecklistItem(key: "pin", item: "Order Pin", format: ChecklistItem.Format(rawValue: "PIN"), possibleValues: ["1234"], allowedValues: [], _optional: false, additionalOptions: [:]),
-//            ChecklistItem(key: "rating", item: "Drop rating", format: ChecklistItem.Format(rawValue: "RATING"), possibleValues: ["5"], allowedValues: [], _optional: false, additionalOptions: [:]),
-//            ChecklistItem(key: "date", item: "Drop Date", format: ChecklistItem.Format(rawValue: "DATE"), possibleValues: [], allowedValues: [], _optional: true, additionalOptions: [:]),
-//            ChecklistItem(key: "time", item: "Drop Time", format: ChecklistItem.Format(rawValue: "TIME"), possibleValues: [], allowedValues: [], _optional: true, additionalOptions: [:]),
-//            ChecklistItem(key: "datetime", item: "Drop Date and Time", format: ChecklistItem.Format(rawValue: "DATETIME"), possibleValues: [], allowedValues: [], _optional: true, additionalOptions: [:]),
+            ChecklistItem(key: "url", item: "Terms and condition", format: ChecklistItem.Format(rawValue: "URL"), possibleValues: ["https://locus.sh/privacy-policy/"], allowedValues: [], _optional: false, additionalOptions: [:]),
+            ChecklistItem(key: "text", item: "comments", format: ChecklistItem.Format(rawValue: "TEXT_FIELD"), possibleValues: [], allowedValues: [], _optional: false, additionalOptions: [:]),
+            ChecklistItem(key: "pin", item: "Order Pin", format: ChecklistItem.Format(rawValue: "PIN"), possibleValues: ["1234"], allowedValues: [], _optional: false, additionalOptions: [:]),
+            ChecklistItem(key: "rating", item: "Drop rating", format: ChecklistItem.Format(rawValue: "RATING"), possibleValues: ["5"], allowedValues: [], _optional: false, additionalOptions: [:]),
+            ChecklistItem(key: "date", item: "Drop Date", format: ChecklistItem.Format(rawValue: "DATE"), possibleValues: [], allowedValues: [], _optional: true, additionalOptions: [:]),
+            ChecklistItem(key: "time", item: "Drop Time", format: ChecklistItem.Format(rawValue: "TIME"), possibleValues: [], allowedValues: [], _optional: true, additionalOptions: [:]),
+            ChecklistItem(key: "datetime", item: "Drop Date and Time", format: ChecklistItem.Format(rawValue: "DATETIME"), possibleValues: [], allowedValues: [], _optional: true, additionalOptions: [:]),
         ]
         let checklist = Checklist(status: "Completed", items: checlistitems)
         LocusSDK.tintColour = UIColor.red
-//        LocusSDK.displayChecklistView(checklist: checklist, initialValues: ["text": "hbfhjebfsdbck bewfkj", "rating": "4", "pin": "1234", "url": "true", "bool": "true", "cancellation-reason": "Quality issue"], successBlock: {
-//            value in self.print("\(value)")
-//                }) { _ in
-//        }
         let display = LocusSDKChecklistDisplayConfig(title: "Checklist", subtitle: "enter details and click submit", buttonTitle: "Submit", attributedTitle: NSAttributedString(string: "CHECKLIST"), attributedSubtitle: nil, type: .fullScreen)
         LocusSDK.displayChecklistView(checklist: checklist, displayConfig: display, initialValues: ["datetime": "2021-08-20T13:15:15", "date": "2020-08-25", "time": "13:30:23"], successBlock: { result in self.consolePrint(result.getDictionaryAfterUploadingFilesFor(task: Task.from(clientId: "test", taskId: "2020-08-19-karthikmn_11")).description) }) { error in
             self.consolePrint(error.message)
