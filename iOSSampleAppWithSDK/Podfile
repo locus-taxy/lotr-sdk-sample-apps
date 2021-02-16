@@ -6,6 +6,6 @@ target 'SampleAPP' do
   use_frameworks!
   
 #  # Pods for SampleAPP
-  pod 'LocusLotrSdk', :git => 'git@github.com:locus-taxy/lotr-sdk-ios.git'
+  pod 'LocusFramework', :git => 'git@github.com:locus-taxy/LocusSDKFramework.git'
 
 end

@@ -5,13 +5,13 @@
 //  Created by Karthik M N on 28/09/20.
 //
 import UIKit
-import LocusLotrSdk
+import LocusFramework
 
 extension Task {
 
     static func from(clientId: String, taskId: String) -> Task {
 
-        return Task(clientId: clientId, taskId: taskId, status: nil, sourceOrderId: nil, orderDetail: nil, assignedUser: nil, creationTime: nil, completionTime: nil, checklists: nil, statusUpdates: nil, customFields: nil, taskGraph: nil, carrierTeams: nil, taskAppConfig: nil)
+        return Task(clientId: clientId, taskId: taskId, status: nil, sourceOrderId: nil, scanId: nil, orderDetail: nil, assignedUser: nil, creationTime: nil, completionTime: nil, checklists: nil, statusUpdates: nil, customFields: nil, taskGraph: nil, carrierTeams: nil, taskAppConfig: nil)
     }
 }
 
