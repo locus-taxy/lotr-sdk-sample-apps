@@ -151,7 +151,7 @@ class TrackinFragment : Fragment(), TrackingListener {
             try {
                 val resolvableApiException = lotrSdkError.throwable as ResolvableApiException
                 // Show the dialog by calling startResolutionForResult() and check the result in onActivityResult().
-                resolvableApiException.startResolutionForResult(activity, 1001)
+                resolvableApiException.startResolutionForResult(activity!!, 1001)
             } catch (sendEx: IntentSender.SendIntentException) {
                 // Ignore the error.
             }
