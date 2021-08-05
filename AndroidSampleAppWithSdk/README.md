@@ -4,12 +4,18 @@
 
 Add this in repositories block of app/build.gradle
 ```
-maven { url 'https://locus.bintray.com/locus-lotr-sdk' }
+mavenCentral()
+maven { url 'https://skyhookwireless.github.io/skyhook-location-android' }
 ```
 
 and this in dependencies block of app/build.gradle
 ```
-implementation 'sh.locus:lotr.sdk:1.0.11'
+implementation 'sh.locus:lotr.sdk:1.0.15'
+
+// Optional for RxJava based APIs
+implementation 'io.reactivex.rxjava2:rxandroid:2.1.1'
+implementation 'io.reactivex.rxjava2:rxjava:2.2.19'
+
 ```
 
 
