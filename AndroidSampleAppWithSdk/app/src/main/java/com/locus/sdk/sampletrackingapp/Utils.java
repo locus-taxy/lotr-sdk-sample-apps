@@ -1,5 +1,10 @@
 package com.locus.sdk.sampletrackingapp;
 
+import android.content.Context;
+
+import sh.locus.lotr.model.User;
+import sh.locus.lotr.sdk.LocusLotrSdk;
+import sh.locus.lotr.sdk.LocusLotrSdkState;
 import sh.locus.lotr.sdk.exception.LotrSdkError;
 import sh.locus.lotr.sdk.exception.MissingPermissionsException;
 
@@ -39,5 +44,21 @@ public class Utils {
         }
 
         return null;
+    }
+
+    // Initialise SDK when it's already authenticated
+    public boolean initSdkIfLoggedIn(Context context) {
+
+        if (LocusLotrSdk.getSdkState() != LocusLotrSdkState.AUTHENTICATED) {
+            return false;
+        }
+
+        User user = new User();
+        // Set fields if available. Not actually required.
+        user.setClientId("");
+        user.setUserId("");
+
+        LocusLotrSdk.setContext(context, user);
+        return true;
     }
 }
