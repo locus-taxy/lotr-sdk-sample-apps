@@ -12,6 +12,9 @@ and this in dependencies block of app/build.gradle
 ```
 implementation 'sh.locus:lotr.sdk:1.0.15'
 
+// Optional. Add when LOTR server models are used
+implementation 'sh.locus.lotr:lotr-javasdk:1.1.1'
+
 // Optional for RxJava based APIs
 implementation 'io.reactivex.rxjava2:rxandroid:2.1.1'
 implementation 'io.reactivex.rxjava2:rxjava:2.2.19'
