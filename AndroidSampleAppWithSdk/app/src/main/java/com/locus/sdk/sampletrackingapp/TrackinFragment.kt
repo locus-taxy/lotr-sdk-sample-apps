@@ -15,16 +15,23 @@ import android.widget.TextView
 import android.widget.Toast
 import androidx.fragment.app.Fragment
 import com.google.android.gms.common.api.ResolvableApiException
+import com.locus.sdk.sampletrackingapp.databinding.FragmentTrackinBinding
 import io.reactivex.schedulers.Schedulers
-import kotlinx.android.synthetic.main.fragment_trackin.*
 import org.slf4j.Logger
 import org.slf4j.LoggerFactory
-import sh.locus.lotr.sdk.*
+import sh.locus.lotr.sdk.LocusLocation
+import sh.locus.lotr.sdk.LocusLotrSdk
+import sh.locus.lotr.sdk.LogoutStatusListener
+import sh.locus.lotr.sdk.TrackingListener
+import sh.locus.lotr.sdk.TrackingRequestParams
 import sh.locus.lotr.sdk.exception.LotrSdkError
 import sh.locus.lotr.sdk.logging.LotrSdkEventType
-import java.util.*
+import java.util.Date
 
 class TrackinFragment : Fragment(), TrackingListener {
+
+    private var _binding: FragmentTrackinBinding? = null
+    private val binding get() = _binding!!
 
     private lateinit var sharedPreferences: SharedPreferences
     private lateinit var logger: Logger
@@ -45,7 +52,8 @@ class TrackinFragment : Fragment(), TrackingListener {
 
         context ?: return null
 
-        val view = inflater.inflate(R.layout.fragment_trackin, container, false)
+        _binding = FragmentTrackinBinding.inflate(inflater, container, false)
+        val view = binding.root
 
         sharedPreferences = context.getSharedPreferences("sample-app-prefs", Context.MODE_PRIVATE)
         isTracking = sharedPreferences.getBoolean(KEY_IS_TRACKING, false)
@@ -132,8 +140,8 @@ class TrackinFragment : Fragment(), TrackingListener {
                 .build()
             LocusLotrSdk.startTracking(this, requestParams)
 
-            tv_error_message.text = ""
-            tv_error_time.text = ""
+            binding.tvErrorMessage.text = ""
+            binding.tvErrorTime.text = ""
         } else {
             LocusLotrSdk.stopTracking()
         }
@@ -141,7 +149,7 @@ class TrackinFragment : Fragment(), TrackingListener {
 
     override fun onLocationUpdated(location: LocusLocation) {
         val locationString = location.toIndentedString()
-        tv_location.text = locationString
+        binding.tvLocation.text = locationString
         logger.info(locationString.replace('\n', ' '))
     }
 
@@ -151,15 +159,15 @@ class TrackinFragment : Fragment(), TrackingListener {
             try {
                 val resolvableApiException = lotrSdkError.throwable as ResolvableApiException
                 // Show the dialog by calling startResolutionForResult() and check the result in onActivityResult().
-                resolvableApiException.startResolutionForResult(activity!!, 1001)
+                resolvableApiException.startResolutionForResult(requireActivity(), 1001)
             } catch (sendEx: IntentSender.SendIntentException) {
                 // Ignore the error.
             }
             return
         }
 
-        tv_error_message.text = lotrSdkError.message
-        tv_error_time.text = getString(R.string.error_time, Date().toString())
+        binding.tvErrorMessage.text = lotrSdkError.message
+        binding.tvErrorTime.text = getString(R.string.error_time, Date().toString())
         lotrSdkError.throwable?.let {
             logger.error("Error", it)
         }
