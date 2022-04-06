@@ -6,6 +6,8 @@
     <!-- For logback -->
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
+    <uses-sdk tools:overrideLibrary="androidx.security"/>
+
     <application
         android:name="androidx.multidex.MultiDexApplication"
         android:icon="@mipmap/ic_launcher"
@@ -16,7 +18,8 @@
         tools:ignore="GoogleAppIndexingWarning">
         <activity
             android:name=".MainActivity"
-            android:windowSoftInputMode="adjustResize">
+            android:windowSoftInputMode="adjustResize"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

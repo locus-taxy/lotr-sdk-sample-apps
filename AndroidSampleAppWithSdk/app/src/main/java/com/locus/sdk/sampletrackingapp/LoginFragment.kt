@@ -8,11 +8,9 @@ import android.view.View
 import android.view.ViewGroup
 import android.view.inputmethod.EditorInfo
 import android.view.inputmethod.InputMethodManager
-import android.widget.Button
 import android.widget.Toast
 import androidx.fragment.app.Fragment
-import com.google.android.material.textfield.TextInputEditText
-import kotlinx.android.synthetic.main.fragment_login.*
+import com.locus.sdk.sampletrackingapp.databinding.FragmentLoginBinding
 import sh.locus.lotr.sdk.LocusLotrSdk
 import sh.locus.lotr.sdk.LotrSdkReadyCallback
 import sh.locus.lotr.sdk.auth.ClientAuthParams
@@ -23,15 +21,19 @@ class LoginFragment : Fragment() {
 
     private lateinit var loginListener: LoginListener
 
-    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
+    private var _binding: FragmentLoginBinding? = null
+    private val binding get() = _binding!!
 
-        val view = inflater.inflate(R.layout.fragment_login, container, false)
+    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View {
 
-        view.findViewById<Button>(R.id.bt_login).setOnClickListener {
+        _binding = FragmentLoginBinding.inflate(inflater, container, false)
+        val view = binding.root
+
+        binding.btLogin.setOnClickListener {
             attemptLogin()
         }
 
-        view.findViewById<TextInputEditText>(R.id.et_password).setOnEditorActionListener { textView, actionId, _ ->
+        binding.etPassword.setOnEditorActionListener { textView, actionId, _ ->
             if (actionId == EditorInfo.IME_ACTION_DONE) {
 
                 // Hide keypad
@@ -48,9 +50,9 @@ class LoginFragment : Fragment() {
     }
 
     private fun attemptLogin() {
-        val clientId = et_client.text?.toString()?.trim() ?: ""
-        val userId = et_user.text?.toString()?.trim() ?: ""
-        val password = et_password.text?.toString()?.trim() ?: ""
+        val clientId = binding.etClient.text?.toString()?.trim() ?: ""
+        val userId = binding.etUser.text?.toString()?.trim() ?: ""
+        val password = binding.etPassword.text?.toString()?.trim() ?: ""
 
         if (clientId.isEmpty() || userId.isEmpty() || password.isEmpty()) {
             Toast.makeText(context, getString(R.string.error_blank_in_login), Toast.LENGTH_LONG).show()
@@ -58,7 +60,7 @@ class LoginFragment : Fragment() {
         }
 
         login(clientId, userId, password)
-        bt_login.isEnabled = false
+        binding.btLogin.isEnabled = false
     }
 
     override fun onAttach(context: Context) {
@@ -78,7 +80,7 @@ class LoginFragment : Fragment() {
             }
 
             override fun onError(error: LotrSdkError) {
-                bt_login.isEnabled = true
+                binding.btLogin.isEnabled = true
                 Toast.makeText(context, error.message, Toast.LENGTH_LONG).show()
                 error.throwable?.printStackTrace()
             }
