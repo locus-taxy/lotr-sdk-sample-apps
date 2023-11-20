@@ -10,10 +10,10 @@ maven { url 'https://skyhookwireless.github.io/skyhook-location-android' }
 
 This in dependencies block of app/build.gradle
 ```
-implementation 'sh.locus:lotr.sdk:1.0.16'
+implementation 'sh.locus:lotr.sdk:1.0.18'
 
 // Optional. Add when LOTR server models are used
-implementation 'sh.locus.lotr:lotr-javasdk:1.1.2'
+implementation 'sh.locus.lotr:lotr-javasdk:1.1.6'
 
 // Optional for RxJava based APIs
 implementation 'io.reactivex.rxjava2:rxandroid:2.1.1'
@@ -38,7 +38,7 @@ The SDK uses library only when running on a device with SDK level 23 or more.
 31
 
 ### Kotlin gradle plugin version
-1.6.10
+1.7.10
 
 ### Permissions
 
