@@ -1,6 +1,5 @@
 package com.locus.sdk.sampletrackingapp
 
-
 import android.annotation.SuppressLint
 import android.content.Context
 import android.content.IntentSender
