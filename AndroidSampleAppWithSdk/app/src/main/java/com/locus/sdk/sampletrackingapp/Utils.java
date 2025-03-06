@@ -30,8 +30,6 @@ public class Utils {
                 break;
             case FUSED_LOCATION_NOT_AVAILABLE:
                 break;
-            case SKYHOOK_LOCATION_NOT_AVAILABLE:
-                break;
         }
     }
 

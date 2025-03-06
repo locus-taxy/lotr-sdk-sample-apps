@@ -5,12 +5,11 @@
 Add this in repositories block of app/build.gradle
 ```
 mavenCentral()
-maven { url 'https://skyhookwireless.github.io/skyhook-location-android' }
 ```
 
 This in dependencies block of app/build.gradle
 ```
-implementation 'sh.locus:lotr.sdk:1.0.18'
+implementation 'sh.locus:lotr.sdk:1.1.5'
 
 // Optional. Add when LOTR server models are used
 implementation 'sh.locus.lotr:lotr-javasdk:1.1.6'
