@@ -3,7 +3,6 @@ apply plugin: 'kotlin-android'
 
 repositories {
     mavenCentral()
-    maven { url 'https://skyhookwireless.github.io/skyhook-location-android' }
 }
 
 android {
@@ -77,7 +76,7 @@ dependencies {
 
     implementation 'androidx.multidex:multidex:2.0.1'
 
-    implementation 'sh.locus:lotr.sdk:1.0.18'
+    implementation 'sh.locus:lotr.sdk:1.1.5'
     implementation 'sh.locus.lotr:lotr-javasdk:1.1.6'
 
     // Used com.google.android.gms.common.api.ResolvableApiException
@@ -104,7 +103,6 @@ dependencies {
     def daggerVersion = '2.28.3'
     implementation "com.google.dagger:dagger:$daggerVersion"
 
-    implementation 'com.skyhook.location:location-sdk-android:5.8.4'
 
     implementation "androidx.work:work-runtime-ktx:2.7.1"
 
