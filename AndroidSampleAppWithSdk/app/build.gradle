@@ -6,11 +6,11 @@ repositories {
 }
 
 android {
-    compileSdkVersion 33
+    compileSdkVersion 34
 
     defaultConfig {
         applicationId "com.loucs.sdk.sampletrackingapp"
-        minSdkVersion 21
+        minSdkVersion 24
         targetSdkVersion 33
         versionCode 1
         versionName "1.0.0"
@@ -54,12 +54,12 @@ android {
     }
 
     compileOptions {
-        sourceCompatibility JavaVersion.VERSION_1_8
-        targetCompatibility JavaVersion.VERSION_1_8
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
     }
 
     kotlinOptions {
-        jvmTarget = '1.8'
+        jvmTarget = '17'
     }
 }
 
@@ -76,7 +76,7 @@ dependencies {
 
     implementation 'androidx.multidex:multidex:2.0.1'
 
-    implementation 'sh.locus:lotr.sdk:1.1.5'
+    implementation 'sh.locus:lotr.sdk:1.1.8'
     implementation 'sh.locus.lotr:lotr-javasdk:1.1.6'
 
     // Used com.google.android.gms.common.api.ResolvableApiException
