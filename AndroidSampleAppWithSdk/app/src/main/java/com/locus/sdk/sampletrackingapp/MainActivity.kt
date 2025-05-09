@@ -50,27 +50,43 @@ class MainActivity : AppCompatActivity(), LoginFragment.LoginListener,
     override fun onStart() {
         super.onStart()
 
-        val requiredPermissions = arrayListOf(
+        val initialPermissions = arrayListOf(
             Manifest.permission.ACCESS_FINE_LOCATION,
             Manifest.permission.ACCESS_COARSE_LOCATION,
-            Manifest.permission.WRITE_EXTERNAL_STORAGE // Required logging in sample app
+            Manifest.permission.WRITE_EXTERNAL_STORAGE
         )
 
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
-            requiredPermissions.add(Manifest.permission.ACTIVITY_RECOGNITION)
-            requiredPermissions.add(Manifest.permission.ACCESS_BACKGROUND_LOCATION)
+            initialPermissions.add(Manifest.permission.ACTIVITY_RECOGNITION)
         } else {
-            requiredPermissions.add(Manifest.permission.READ_PHONE_STATE)
+            initialPermissions.add(Manifest.permission.READ_PHONE_STATE)
         }
 
-        val missingPermissions = requiredPermissions.filter {
+        val missingInitial = initialPermissions.filter {
             ActivityCompat.checkSelfPermission(this, it) != PackageManager.PERMISSION_GRANTED
         }
 
-        if (missingPermissions.isNotEmpty()) {
+        if (missingInitial.isNotEmpty()) {
             ActivityCompat.requestPermissions(
                 this,
-                missingPermissions.toTypedArray(),
+                missingInitial.toTypedArray(),
+                PERMISSION_REQUEST_CODE
+            )
+        } else {
+            requestBackgroundLocationIfNeeded()
+        }
+    }
+
+    private fun requestBackgroundLocationIfNeeded() {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q &&
+            ActivityCompat.checkSelfPermission(
+                this,
+                Manifest.permission.ACCESS_BACKGROUND_LOCATION
+            ) != PackageManager.PERMISSION_GRANTED
+        ) {
+            ActivityCompat.requestPermissions(
+                this,
+                arrayOf(Manifest.permission.ACCESS_BACKGROUND_LOCATION),
                 PERMISSION_REQUEST_CODE
             )
         }
@@ -92,6 +108,18 @@ class MainActivity : AppCompatActivity(), LoginFragment.LoginListener,
         } catch (e: IllegalStateException) {
             // When it wasn't even initialized
             e.printStackTrace()
+        }
+    }
+
+    override fun onRequestPermissionsResult(
+        requestCode: Int,
+        permissions: Array<out String>,
+        grantResults: IntArray
+    ) {
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults)
+
+        if (requestCode == PERMISSION_REQUEST_CODE) {
+            requestBackgroundLocationIfNeeded()
         }
     }
 
