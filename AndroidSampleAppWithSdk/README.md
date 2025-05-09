@@ -9,10 +9,10 @@ mavenCentral()
 
 This in dependencies block of app/build.gradle
 ```
-implementation 'sh.locus:lotr.sdk:1.1.5'
+implementation 'sh.locus:lotr.sdk:1.1.8'
 
 // Optional. Add when LOTR server models are used
-implementation 'sh.locus.lotr:lotr-javasdk:1.1.6'
+implementation 'sh.locus.lotr:lotr-javasdk:1.1.8'
 
 // Optional for RxJava based APIs
 implementation 'io.reactivex.rxjava2:rxandroid:2.1.1'
@@ -34,7 +34,7 @@ If minSdkVersion of your project is less than 23, add the following in the manif
 The SDK uses library only when running on a device with SDK level 23 or more.
 
 ### compileSdkVersion
-31
+34
 
 ### Kotlin gradle plugin version
 1.7.10
