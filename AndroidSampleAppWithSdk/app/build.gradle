@@ -6,6 +6,9 @@ repositories {
 }
 
 android {
+
+    namespace "com.loucs.sdk.sampletrackingapp"
+
     compileSdkVersion 34
 
     defaultConfig {
