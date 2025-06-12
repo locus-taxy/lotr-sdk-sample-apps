@@ -10,6 +10,7 @@ import android.view.inputmethod.EditorInfo
 import android.view.inputmethod.InputMethodManager
 import android.widget.Toast
 import androidx.fragment.app.Fragment
+import com.loucs.sdk.sampletrackingapp.BuildConfig
 import com.loucs.sdk.sampletrackingapp.R
 import com.loucs.sdk.sampletrackingapp.databinding.FragmentLoginBinding
 import sh.locus.lotr.sdk.LocusLotrSdk
