@@ -9,6 +9,7 @@ android {
     compileSdkVersion 34
 
     defaultConfig {
+        multiDexEnabled true
         applicationId "com.loucs.sdk.sampletrackingapp"
         minSdkVersion 24
         targetSdkVersion 33
