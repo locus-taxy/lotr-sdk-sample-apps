@@ -37,7 +37,7 @@ The SDK uses library only when running on a device with SDK level 23 or more.
 34
 
 ### Kotlin gradle plugin version
-1.7.10
+1.9.0
 
 ### Permissions
 

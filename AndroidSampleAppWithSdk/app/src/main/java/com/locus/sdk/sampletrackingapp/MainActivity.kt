@@ -9,6 +9,7 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
 import androidx.fragment.app.Fragment
+import com.loucs.sdk.sampletrackingapp.R
 import sh.locus.lotr.sdk.LocusLotrSdk
 import sh.locus.lotr.sdk.LogoutStatusListener
 

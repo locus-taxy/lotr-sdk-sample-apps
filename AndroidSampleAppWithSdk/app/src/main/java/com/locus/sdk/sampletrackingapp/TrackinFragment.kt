@@ -14,7 +14,8 @@ import android.widget.TextView
 import android.widget.Toast
 import androidx.fragment.app.Fragment
 import com.google.android.gms.common.api.ResolvableApiException
-import com.locus.sdk.sampletrackingapp.databinding.FragmentTrackinBinding
+import com.loucs.sdk.sampletrackingapp.R
+import com.loucs.sdk.sampletrackingapp.databinding.FragmentTrackinBinding
 import io.reactivex.schedulers.Schedulers
 import org.slf4j.Logger
 import org.slf4j.LoggerFactory
