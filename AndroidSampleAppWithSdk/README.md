@@ -9,7 +9,7 @@ mavenCentral()
 
 This in dependencies block of app/build.gradle
 ```
-implementation 'sh.locus:lotr.sdk:1.1.8'
+implementation 'sh.locus:lotr.sdk:1.2.1'
 
 // Optional. Add when LOTR server models are used
 implementation 'sh.locus.lotr:lotr-javasdk:1.1.8'
@@ -37,7 +37,7 @@ The SDK uses library only when running on a device with SDK level 23 or more.
 34
 
 ### Kotlin gradle plugin version
-1.9.0
+2.1.21
 
 ### Permissions
 
