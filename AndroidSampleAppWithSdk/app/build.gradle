@@ -49,8 +49,7 @@ android {
 
     packagingOptions {
         resources {
-            excludes += ['META-INF/*' +
-                                 '']
+            excludes += ['META-INF/*']
         }
     }
 
@@ -85,7 +84,7 @@ dependencies {
 
     implementation 'androidx.multidex:multidex:2.0.1'
 
-    implementation 'sh.locus:lotr.sdk:1.2.0'
+    implementation 'sh.locus:lotr.sdk:1.2.1'
     implementation 'sh.locus.lotr:lotr-javasdk:1.1.8'
 
     // Used com.google.android.gms.common.api.ResolvableApiException
