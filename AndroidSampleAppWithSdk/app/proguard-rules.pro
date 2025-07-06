@@ -23,3 +23,27 @@
 -keep class ch.qos.** { *; }
 -keep class org.slf4j.** { *; }
 -dontwarn ch.qos.logback.core.net.*
+
+-dontwarn com.sun.activation.registries.LogSupport
+-dontwarn com.sun.activation.registries.MailcapFile
+-dontwarn java.awt.datatransfer.DataFlavor
+-dontwarn java.awt.datatransfer.Transferable
+-dontwarn javax.ws.rs.client.Client
+-dontwarn javax.ws.rs.client.ClientBuilder
+-dontwarn javax.ws.rs.client.Entity
+-dontwarn javax.ws.rs.client.Invocation$Builder
+-dontwarn javax.ws.rs.client.WebTarget
+-dontwarn javax.ws.rs.core.Configurable
+-dontwarn javax.ws.rs.core.Configuration
+-dontwarn javax.ws.rs.core.Form
+-dontwarn javax.ws.rs.core.GenericType
+-dontwarn org.glassfish.jersey.client.ClientConfig
+-dontwarn org.glassfish.jersey.filter.LoggingFilter
+-dontwarn org.glassfish.jersey.jackson.JacksonFeature
+-dontwarn org.glassfish.jersey.media.multipart.BodyPart
+-dontwarn org.glassfish.jersey.media.multipart.ContentDisposition$ContentDispositionBuilder
+-dontwarn org.glassfish.jersey.media.multipart.FormDataBodyPart
+-dontwarn org.glassfish.jersey.media.multipart.FormDataContentDisposition$FormDataContentDispositionBuilder
+-dontwarn org.glassfish.jersey.media.multipart.FormDataContentDisposition
+-dontwarn org.glassfish.jersey.media.multipart.MultiPart
+-dontwarn org.glassfish.jersey.media.multipart.MultiPartFeature
