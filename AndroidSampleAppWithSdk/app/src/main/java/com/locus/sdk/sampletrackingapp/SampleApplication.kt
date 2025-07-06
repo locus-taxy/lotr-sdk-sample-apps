@@ -1,9 +1,9 @@
 package com.locus.sdk.sampletrackingapp
 
-import android.app.Application
+import androidx.multidex.MultiDexApplication
 import sh.locus.lotr.sdk.LocusLotrSdk
 
-class SampleApplication : Application() {
+class SampleApplication : MultiDexApplication() {
 
     override fun onCreate() {
         super.onCreate()
